@@ -1,0 +1,13 @@
+#headerStrony {
+    height: 60px;
+    background-color: #45517D;
+    text-align: left;
+    color: white;
+}
+
+#footerStrony {
+    height: 60px;
+    background-color: #45517D;
+    color: white;
+    font-size: 150%;
+}
