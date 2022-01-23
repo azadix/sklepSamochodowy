@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
 #headerStrony {
     height: 60px;
     background-color: #45517D;
@@ -18,13 +23,19 @@ body {
     text-align: center;
 }
 
-#footerTable {
-    width: 100%;
+#glownaZawartosc {
+    display: flex;
 }
 
 #lewyPanel {
     background-color: #61B2EC;
     width: 40%;
+    height: 500px;
+}
+
+#prawyPanel {
+    background-color: #8EC9F2;
+    width: 60%;
     height: 500px;
 }
 
@@ -34,8 +45,17 @@ ul a {
     cursor: pointer;
 }
 
-#prawyPanel {
-    background-color: #8EC9F2;
-    width: 60%;
-    height: 500px;
+#footerTable {
+    width: 100%;
+}
+
+footer a {
+    color: orange;
+    text-decoration-color: orange;
+}
+
+footer a:visited {
+    color: green;
+    text-decoration-color: green;
+    ;
 }

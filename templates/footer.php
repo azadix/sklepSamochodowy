@@ -3,11 +3,11 @@
         <table id = "footerTable">
             <tr>
                 <td>
-                    <a href="/kwerenda.html">Kwerenda</a>
+                    <a href="kwerenda.html">Kwerenda</a>
                 </td>
 
                 <td>
-                    Azadi: 00000000000
+                    Azadi: 21374206901
                 </td>
 
                 <td>

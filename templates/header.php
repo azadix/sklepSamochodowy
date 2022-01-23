@@ -13,6 +13,6 @@
 
 <header>
     <div id="headerStrony">
-        <h1>Samochody</h1>
+        <h1><a id="logoStrony" href="index.php">Samochody</a></h1>
     </div>
 </header>
