@@ -1,7 +1,8 @@
 <?php
     function dodajZawartoscNaPodstawieParametru(){
         if (isset($_GET['car'])) {
-            echo "<p>" . htmlspecialchars($_GET['car']) . "</p>";
+            echo "<p>Key= " . htmlspecialchars($_GET['car']) . "</p>";
+            echo "<p>Value= " . $GLOBALS['listaSamochodow'][$_GET['car']] . "</p>";
         } else {
             echo "<p>Witamy na stronie głównej komisu.</br>Wybierz auto z lewej strony panelu aby zobaczyć szczegóły</p>";
         }
