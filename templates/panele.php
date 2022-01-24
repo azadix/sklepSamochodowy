@@ -9,12 +9,44 @@
     }
 
     function dodajListeSamochodow(){
-        $numeracja = 1;
-        foreach ($GLOBALS['listaSamochodow'] as $klucz => $nazwa) {
-            echo "<a href='?car={$klucz}'><li>{$numeracja} {$nazwa}</li></a>";
+        $numeracja = 0;
+        foreach (getSamochody() AS $key => $value) {
             $numeracja++;
+            if (is_array($value)){
+                echo "<a href='?car={$key}'><li>{$numeracja} {$value[model]}</li>";
+                foreach ($value AS $subKey => $subValue ){
+                    echo "<li class='subValue'>{$subKey}: {$subValue}</li>"; // STYLE ME PLZ - padding from left or sth
+                }
+                echo '</a>';
+            } else {
+                echo "<a href='?car={$key}'><li>{$numeracja} {$value}</li></a>";
+            }
         }
-    }    
+    }
+
+    function getSamochod($car){
+        return getSamochody()[$car];
+    }
+
+    // such array might not be the best solution
+    // hovewer, having mixed arrays like these
+    // WILL actually happen. And as you can see in
+    // changed dodajListeSamochodow() - code can
+    // still work well with it
+    function getSamochody(){
+        return array(
+            "panda" => "Fiat Panda",
+            "punto" => array(
+                'model' => "Fiat Punto",
+                'silnik' => '50L',
+                'kolor' => 'czerwony'
+            ),
+            "corsa" => "Opel Corsa",
+            "astra" => "Opel Astra",
+            "corolla" => "Toyota Corolla",
+            "yaris" => "Toyota Yaris"
+        );
+    }
 ?>
 
 
