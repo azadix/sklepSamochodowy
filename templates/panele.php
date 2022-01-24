@@ -29,7 +29,7 @@
     }
 
     // such array might not be the best solution
-    // hovewer, having mixed arrays like these
+    // however, having mixed arrays like these
     // WILL actually happen. And as you can see in
     // changed dodajListeSamochodow() - code can
     // still work well with it
